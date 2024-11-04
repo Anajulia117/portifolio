@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <main id="main">
+        <nav id="nav">
+            <div> <button onclick="Habilidades()"><h2>Habilidades</h2></button></div>
+            <div><button onclick="Projetos()"><h2>Projetos</h2></button></div>
+            <div><button onclick="Sobre()"><h2>Sobre</h2></button></div>
+            <div class="git"><button><a href=""><h2>GitHub</h2></a></button></div>
+            <div class="trocar">
+            <label class="switch">
+                <input type="checkbox" onclick="dark()">
+                <span class="slider"></span>
+              </label>
+            </div>
+        </nav>
+        <div class="nome">
+            <h1>Bem vindo eu sou a Ana</h1>
+        </div>
+    </main>
+    <div class="sobreMim" id="Sobre">
+        <div class="h1Sobre">
+            <h1>Sobre Mim</h1>
+        </div>
+        <div class="txt">
+            <h3>Sou estudante de T.I do seguno ano do ensino médio. Comecei a me interessar pelo meio da tecnologia quando descobrir a ciber segurança desde de então comecei a entrar nesse mundo, e mesmo a escola que eu estudo não sendo dedicada a cibersegurança é muito bom  estar nesse meio de tecnológia de alguma forma.
+                Sigo fazendo cursos e indo em palestras para me aprofundar nessa área.
+               </h3>
+        </div>
+        <div class="email"><h3>12302686@aluno.cotemig.com.br</h3></div>
+        
+    </div>
+    <div class="txtAlguns">
+        <h1>Alguns dos meus projetos</h1>
+        </div>
+    <div class="alguns" id="projetos">
+        
+        <div class="front">
+            <div class="front">
+                <h2>Front-end</h2>
+            </div>
+            <div class="projeto1">
+                <img src="image.png" alt="">
+            </div>
+            <div>
+                <img src="image (1).png" alt="">
+            </div>
+            <div>
+                <img src="image (2).png" alt="">
+            </div>
+        </div>
+        <div class="back">
+            <div class="back-end">
+                <h2>Back-End</h2>
+            </div>
+            <div>
+                <img src="image (3).png">
+            </div>
+            <div>
+            <img src="image (4).png" alt="">
+            </div>
+            <DIV>
+                <img src="image (5).png" alt="">
+            </DIV>
+        </div>
+        <div class="banco">
+            <div>
+                <div><h2>banco de dados</h2></div>
+                <div><img src="image (6).png" alt=""></div>
+                <div><img src="image (7).png" alt=""></div>
+                <div> <img src="image (8).png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <div class="habilidades" id="Habilidades">
+        <div class="h1Habilidades">
+            <h1>Habilidades</h1>
+        </div>
+        <div>
+            <h3>Programação em JavaScript: Estou aprendendo a sintaxe e os conceitos fundamentais da linguagem JavaScript, que é essencial para desenvolvimento web. Isso inclui entender variáveis, tipos de dados, operadores, estruturas de controle (como loops e condicionais), funções e objetos.
+                Manipulação do DOM (Document Object Model): Com JavaScript, aprendendo alterar dinamicamente o conteúdo e o estilo das páginas web. Isso envolve aprender a selecionar elementos HTML, modificar suas propriedades e responder a eventos do usuário (como cliques e entradas de texto).
+                Desenvolvimento Front-End: JavaScript é uma das linguagens principais para desenvolvimento front-end.
+                Resolução de Problemas e Lógica de Programação: C#
+                
+                Princípios de Design e Usabilidade: Ao criar interfaces, você está começando a entender princípios básicos de design e usabilidade para melhorar a experiência do usuário.
+                Trabalho em Equipe e Projetos Colaborativos: Muitas vezes, projetos em escolas técnicas envolvem trabalho em equipe. Você está aprendendo a colaborar com outros desenvolvedores, compartilhar código e coordenar tarefas.</h3>
+        </div>
+        
+    <button id="openModal">Abrir Formulário</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Botão para fechar o modal -->
+            <h2>Formulário</h2>
+            <form id="myForm">
+                <label for="text">Mensagem:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

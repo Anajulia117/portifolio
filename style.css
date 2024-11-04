@@ -1,0 +1,311 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+            width: 100%;
+            background: white;;
+            transition: 0.3s;
+}
+.sobreMim{
+    height: 100vh;
+    width: 100%;
+    background:  #be6dba;
+}
+.h1Sobre{
+    font-size: 3em;
+    color: white;
+    padding-left: 73vh;
+}
+.txt{
+    color: white;
+    text-align: center;
+    align-self: center;
+    font-size: 2em;
+    padding-top: 30vh;
+    padding-left: 30vh;
+    width: 80%;
+}
+.email{
+    color: white;
+    padding: 15vh 0 0 10vh;
+}
+.alguns{
+    width: 100%;
+    height: 140vh;
+    background: #be6dba;
+    color: white;
+}
+.alguns div h1{
+position: absolute;
+
+}
+.alguns{
+    padding-top: 20vh;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.txtAlguns{
+    position: absolute;
+    font-size: 2em;
+    left: 65vh;
+    color: white;
+}
+.alguns div img{
+    height: 200px;
+    width: 400px;
+}
+.habilidades{
+    height: 100vh;
+    width: 100%;
+    background: #be6dba;
+}
+.h1Habilidades{
+    font-size: 3em;
+    color: white;
+    padding-left: 73vh;
+}
+.habilidades div h3{
+    text-align: left;
+    width: 180vh;
+    color: white;
+    font-size: 2em;
+    padding: 25vh 0 0 3vh;
+}
+nav{
+    display: flex;
+    color: rgb(138, 138, 138);
+    padding-top: 3vh;
+    font-size: 1.6em;
+    justify-content: space-around;
+}
+nav div button{
+    font-size: 1em;
+    background-color: transparent;
+    border: none;
+}
+
+
+@media (max-width:440px) {
+    .trocar{
+        position: absolute;
+        left: 20px;
+        top: 60px;
+    }
+    .nome{
+        position: absolute !important;
+        left: 10px !important;
+        top: 400px !important;
+        font-size: 20px !important;
+        text-align: center;
+
+    }
+        nav{
+            font-size: 14px;
+        }
+        .h1Sobre{
+            font-size: 25px;
+            padding-left: 110px;
+            padding-top: 10px;
+        }
+        .txt{
+            width: 90%;
+            padding-top: 60px;
+            padding-left: 40px;
+            font-size: 20px;
+        }
+        .email{
+            padding-left: 70px;
+        }
+        .txtAlguns{
+            left: 5px;
+            top: 2000px;
+            font-size: 16px;
+            width: 100%;
+        }
+        .alguns{
+            flex-direction: column;
+        }
+        .alguns div img{
+            height: 100px;
+            width: 200px;
+        }
+        .h1Habilidades{
+            padding-left: 10px;
+            font-size: 30px;
+            transform: translate(5px,300px);
+            width: 90%;
+        }
+
+        .habilidades div h3{
+            transform: translate(0,200px);
+            width: 100%;
+            font-size: 23px;
+            padding-left: 5px   ;
+        }
+        .habilidades{
+            height: 180vh;
+            width: 100%;
+        }
+        .form button{
+            transform: translate(150px,600px) !important;
+        }
+        #openModal{
+            transform: translate(100px,300px) !important;
+        }
+}
+
+.form button a{
+color: black;
+}
+.form button{
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 2px;
+    transition: 0.5s;
+    transform: translate(800px,600px);
+}
+.form button:hover{
+    opacity: 0.5;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fixa no lugar */
+    z-index: 1; /* Fica acima de outros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza o modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do modal */
+    max-width: 500px; /* Largura máxima do modal */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+.close {
+    color: #aaa;
+    float: right; /* Alinha à direita */
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black; /* Muda a cor ao passar o mouse */
+    text-decoration: none;
+    cursor: pointer; /* Muda o cursor para pointer */
+}
+#openModal {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas do botão */
+    cursor: pointer; /* Muda o cursor para pointer */
+    transform: translate(90vh,10vh);
+}
+button:hover {
+    background-color: #45a049; /* Cor do botão ao passar o mouse */
+}
+.email{
+    padding-left: 10px;
+}
+.nome{
+    font-size: 2em;
+    position: absolute;
+    left: 600px;
+    top: 400px;
+}
+.git button:hover{
+    background-color: transparent;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .darkmode{
+    background: linear-gradient(#ff3939,#141418 100%) !important;
+    color: white !important;
+  }
+  .darkInv{
+    background: linear-gradient(#141418,#ff3939 100% )!important
+  }
+  .dark{
+    color: white !important;
+  }
+  button {
+    color: white !important;
+  }
+  .dark2{
+    background-color: #ff3939 !important;
+  }
